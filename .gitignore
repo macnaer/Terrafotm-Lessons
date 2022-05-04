@@ -3,3 +3,8 @@
 /01. EC2/.terraform.lock.hcl
 /01. EC2/terraform.tfstate
 /01. EC2/terraform.tfstate.backup
+/02. S3/.terraform/providers/registry.terraform.io/hashicorp/aws/4.12.1/windows_amd64
+/02. S3/.terraform.lock.hcl
+/02. S3/terraform.tfstate
+/02. S3/site
+/02. S3/terraform.tfstate.backup
