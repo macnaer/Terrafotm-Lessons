@@ -39,6 +39,18 @@ resource "aws_instance" "EC2-Instance" {
   }
 }
 
+// Elastic IP Address
+resource "aws_eip" "eip_manager" {
+  instance = aws_instance.EC2-Instance.id
+  vpc      = true
+}
+
+// Elastic IP Address attach to instance 
+resource "aws_eip_association" "eip_assoc" {
+  instance_id   = aws_instance.EC2-Instance.id
+  allocation_id = aws_eip.eip_manager.id
+}
+
 
 // Create extebded disk
 resource "aws_ebs_volume" "Main_disk" {

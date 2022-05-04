@@ -1,1 +1,5 @@
 /02. S3/variables.tf
+/01. EC2/.terraform/providers/registry.terraform.io/hashicorp/aws/4.12.1/windows_amd64
+/01. EC2/.terraform.lock.hcl
+/01. EC2/terraform.tfstate
+/01. EC2/terraform.tfstate.backup
