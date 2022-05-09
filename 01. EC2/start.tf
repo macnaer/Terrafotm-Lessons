@@ -24,14 +24,7 @@ resource "aws_instance" "EC2-Instance" {
   }
 
   // User script
-  user_data = <<EOF
-      #!/bin/bash
-      echo "Install Apache2"
-      sudo apt -y update
-      sudo apt -y install apache2
-      sudo systemctl start apache2
-      sudo systemctl enable apache2
-  EOF
+  user_data = file("files/install.sh")
 
   // Tags
   tags = {
